@@ -1,0 +1,38 @@
+{
+  "name": "richardhj/contao-api",
+  "description": "",
+  "type": "contao-bundle",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Richard Henkenjohann",
+      "email": "richardhenkenjohann@googlemail.com",
+      "role": "Developer"
+    }
+  ],
+  "support": {
+    "issues": "https://github.com/richardhj/contao-api/issues",
+    "source": "https://github.com/richardhj/contao-api"
+  },
+  "require": {
+    "php": "^7.4",
+
+    "contao/core-bundle": "^4.9",
+
+    "api-platform/core": "^2.5",
+
+    "symfony/config": "^4.4",
+    "symfony/http-kernel": "^4.4"
+  },
+  "require-dev": {
+    "contao/manager-plugin": "^2.7"
+  },
+  "autoload": {
+    "psr-4": {
+      "Richardhj\\ContaoApiBundle\\": "src/"
+    }
+  },
+  "extra": {
+    "contao-manager-plugin": "Richardhj\\ContaoApiBundle\\ContaoManager\\Plugin"
+  }
+}
